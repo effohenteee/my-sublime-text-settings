@@ -1,0 +1,35 @@
+{
+    // This value specifies the default directory when using AdvancedNewFile.
+    // Note it must be one of these values:
+    //  project_folder - Default will be the folder index specified by the "default_folder_index" setting.
+    //  current - Default will be the directory of the current view.
+    //  home - Default will be the home folder (~/)
+    //  path - Default will be defined by the setting "default_path"
+    // If the current view or top folder cannot be resolved, the home directory
+    // will be used.
+    "default_root": "current",    
+
+    // A string specifying the type of auto completion to use. Valid values are
+    // "windows" or "nix"
+    "completion_type": "nix",
+
+    // Default input for renaming a file. Special value <filename> will be replaced
+    // with the current file name. Special value <filepath> will be replaced with
+    // the complete filepath, including the filename. Special value <filedirectory>
+    // will be replaced with the filepath, not including the filename. Note that a
+    // colon as the default will resolve to the same path as <filedirectory>, if the
+    // file exists on disk.
+    "rename_default": "<filename>",
+
+    // Setting this value to true will allow you to escape characters as you normally
+    // would when using a shell. For example, given the input string "foo\ bar", false
+    // would result in a file named " bar" in the foo directory. With the value set to
+    // true, a file named "foo bar" would be created. In addition, setting this value
+    // to true will allow for curly brace expansion. Currently, only comma separated
+    // entries are supported.
+    "shell_input": false,
+
+    // If a warning should be displayed when trying to overwrite an existing file using
+    // the move command.
+    "warn_overwrite_on_move": true,
+}
